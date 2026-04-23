@@ -1,7 +1,7 @@
 import React, { use } from 'react';
-import friends from '@/data/friends.json'
+import friends from '@/data/friends.json';
 import FriendCard from '@/UI/FriendCard';
-
+import Box from '../box';
 
 
 const FriendSection = () => {
@@ -19,7 +19,9 @@ const FriendSection = () => {
 
                 }
             </div>
-            
+
+
+            <Box></Box>
         </div>
     );
 };
