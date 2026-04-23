@@ -3,9 +3,9 @@ import friends from "@/data/friends.json";
 
 const Banner = () => {
   const totalFriends = friends.length;
-  const onTrackCount = friends.filter((f) => f.status === "on-track").length;
+  const onTrackCount = friends.filter((f) => f.status === "On-Track").length;
   const needAttentionCount = friends.filter(
-    (f) => f.status === "almost due" || f.status === "overdue",
+    (f) => f.status === "Almost Due" || f.status === "Overdue",
   ).length;
 
   const summaryData = [

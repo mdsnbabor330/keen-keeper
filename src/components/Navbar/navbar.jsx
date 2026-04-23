@@ -2,6 +2,7 @@
 import { ChartLine, Clock, House } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import Mylink from "./Mylink";
 
 const navbar = () => {
 
@@ -38,19 +39,13 @@ const navbar = () => {
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
-              <Link
+              <Mylink
                 key={link.id}
                 href={link.href}
-                className={` btn btn-ghost rounded-md text-[#64748B]`}
               >
-                {/* ${
-                  isActive
-                    ? "bg-[#1F5C4A] text-white"
-                    : "text-slate-500"
-                } */}
                 <Icon size={22} />
                 <span>{link.name}</span>
-              </Link>
+              </Mylink>
             );
           })}
       </div>
