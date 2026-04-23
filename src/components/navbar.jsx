@@ -1,3 +1,4 @@
+
 import { ChartLine, Clock, House } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -25,7 +26,8 @@ const navbar = () => {
     },
   ];
   return (
-    <div className="navbar bg-base-100 max-w-350 mx-auto">
+    <nav className=" flex justify-center">
+      <div className="navbar fixed max-w-350 mx-auto bg-base-100">
       <div className="flex-1">
         <p className="text-[24px]">
           <span className="font-extrabold text-[#1F2937]">Keen</span>
@@ -53,6 +55,7 @@ const navbar = () => {
           })}
       </div>
     </div>
+    </nav>
   );
 };
 
