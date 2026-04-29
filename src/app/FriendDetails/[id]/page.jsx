@@ -3,6 +3,7 @@ import friends from "@/data/friends.json";
 import { Archive, BellRing, Trash2 } from "lucide-react";
 import Image from "next/image";
 import QuickCheckIn from "@/components/QuickCheckIn";
+import RecentIneraction from "@/UI/RecentIneraction";
 
 const FriendDetails = async ({ params }) => {
   const { id } = await params;
@@ -126,7 +127,7 @@ const FriendDetails = async ({ params }) => {
               </h3>
             <QuickCheckIn friend={friend} ></QuickCheckIn>
           </div>
-          
+          <RecentIneraction></RecentIneraction>
         </div>
       </div>
     </main>
