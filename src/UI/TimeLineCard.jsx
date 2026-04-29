@@ -13,7 +13,7 @@ const TimeLineCard = () => {
   console.log(filteredTimeLine, "Filtered Timeline");
 
   return (
-    <div className="py-10 flex flex-col gap-5">
+    <div className="py-5 flex flex-col gap-5">
       {filteredTimeLine.length > 0 ? (
         filteredTimeLine.map((item, index) => {
           return (
