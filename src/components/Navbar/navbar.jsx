@@ -29,13 +29,13 @@ const Navbar = () => {
   return (
     <nav className=" flex justify-center">
       <div className="navbar fixed max-w-300 mx-auto bg-base-100 px-4">
-      <div className="flex-1">
-        <p className="text-[28px]">
-          <span className="font-extrabold text-[#1F2937]">Keen</span>
-          <span className="font-bold text-[#244d3f]">Keeper</span>
-        </p>
-      </div>
-      <div className="flex items-center gap-3">
+        <div className="flex-1">
+          <p className="text-[28px]">
+            <span className="font-extrabold text-[#1F2937]">Keen</span>
+            <span className="font-bold text-[#244d3f]">Keeper</span>
+          </p>
+        </div>
+        <div className="flex items-center gap-3">
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
@@ -48,8 +48,8 @@ const Navbar = () => {
               </Mylink>
             );
           })}
+        </div>
       </div>
-    </div>
     </nav>
   );
 };

@@ -19,14 +19,12 @@ const TimeLineCard = () => {
           return (
             <div
               key={index}
-              className="bg-white shadow-sm rounded-lg px-5 py-5 border
-               border-gray-100 w-full"
+              className="bg-white shadow-sm rounded-2xl p-4 md:p-6 border border-slate-100 w-full hover:shadow-md transition-shadow"
             >
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-5">
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-4">
                   <div
-                    className="w-12 h-12 bg-gray-50 rounded-2xl flex
-                   items-center justify-center text-2xl"
+                    className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-xl shrink-0"
                   >
                     {item.type === "Video" ? (
                       <FaVideo className="text-[#244D3F]" />
@@ -38,10 +36,10 @@ const TimeLineCard = () => {
                   </div>
 
                   <div>
-                    <h6 className="font-bold text-[#244D3F]">
+                    <h6 className="font-bold text-[#244D3F] text-sm md:text-base">
                       {`${item.type} with ${item.name}`}
                     </h6>
-                    <p className="text-sm text-gray-500">{item.date}</p>
+                    <p className="text-xs md:text-sm text-slate-500">{item.date}</p>
                   </div>
                 </div>
               </div>

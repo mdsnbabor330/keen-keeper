@@ -7,7 +7,7 @@ const Mylink = ({href, children}) => {
     const pathname = usePathname()
     return (
         <Link 
-            className={` btn rounded-md  ${pathname==href ? 'bg-[#1F5C4A] text-white':'btn-ghost text-[#64748B]'}`}
+            className={`btn btn-sm md:btn-md rounded-md ${pathname==href ? 'bg-[#1F5C4A] text-white' : 'btn-ghost text-[#64748B]'}`}
          href={href}>{children}</Link>
     );
 };

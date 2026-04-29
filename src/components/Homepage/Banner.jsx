@@ -16,19 +16,19 @@ const Banner = () => {
   ];
 
   return (
-    <section className="px-4 pt-25 pb-12 sm:px-6 lg:px-8">
+    <section className="px-4 pt-32 pb-12 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <h1 className="mx-auto max-w-4xl text-[48px] font-extrabold leading-tight text-slate-800">
+          <h1 className="mx-auto max-w-4xl text-3xl md:text-5xl lg:text-[48px] font-extrabold leading-tight text-slate-800">
             Friends to keep close in your life
           </h1>
 
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-500 ">
+          <p className="mx-auto mt-4 max-w-2xl text-sm md:text-base leading-7 text-slate-500 ">
             Your personal shelf of meaningful connections. Browse, tend, and
             nurture the relationships that matter most.
           </p>
 
-          <button className="mt-5 btn py-6 rounded-sm bg-[#1F5C4A] text-xl font-bold text-white shadow-lg ">
+          <button className="mt-8 btn btn-lg rounded-xl bg-[#1F5C4A] text-white shadow-lg border-none hover:bg-[#164235] px-8">
             <Plus size={24} />
             <span>Add a Friend</span>
           </button>

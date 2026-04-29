@@ -1,4 +1,4 @@
-import Footer from "@/components/footer";
+import Footer from "@/components/footer/Footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar/navbar";
 import Providers from "@/lib/providers/Provider";
@@ -18,12 +18,14 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Providers>
-        <Navbar></Navbar>
-        {children}
-        <Footer></Footer>
-        <ToastContainer></ToastContainer>
+          <Navbar></Navbar>
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer></Footer>
+          <ToastContainer></ToastContainer>
         </Providers>
-        </body>
+      </body>
     </html>
   );
 }

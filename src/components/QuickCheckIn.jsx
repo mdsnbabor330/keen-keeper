@@ -15,7 +15,7 @@ const QuickCheckIn = ({ friend }) => {
   };
 
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-wrap gap-4">
       <button
         onClick={() =>
           handleAction({
@@ -25,11 +25,11 @@ const QuickCheckIn = ({ friend }) => {
             date: friend.next_due_date,
           })
         }
-        className="rounded-md btn w-fit bg-[#e9e9e989] px-24 py-10 text-center"
+        className="flex-1 min-w-[100px] rounded-xl btn h-auto py-6 bg-slate-50 border-slate-100 hover:bg-emerald-50 hover:border-emerald-100 group transition-all"
       >
-        <div className="text-sm font-semibold text-[#1F2937] flex flex-col items-center gap-3">
-          <PhoneCall />
-          Call
+        <div className="text-sm font-bold text-slate-600 group-hover:text-emerald-700 flex flex-col items-center gap-2">
+          <PhoneCall size={20} />
+          <span>Call</span>
         </div>
       </button>
       <button
@@ -41,11 +41,11 @@ const QuickCheckIn = ({ friend }) => {
             date: friend.next_due_date,
           })
         }
-        className="rounded-md btn w-fit bg-[#e9e9e989] p-10 text-center"
+        className="flex-1 min-w-[100px] rounded-xl btn h-auto py-6 bg-slate-50 border-slate-100 hover:bg-emerald-50 hover:border-emerald-100 group transition-all"
       >
-        <div className="text-sm font-semibold text-[#1F2937] flex flex-col items-center gap-3">
-          <MessageSquare />
-          Days Since Contact
+        <div className="text-sm font-bold text-slate-600 group-hover:text-emerald-700 flex flex-col items-center gap-2">
+          <MessageSquare size={20} />
+          <span>Text</span>
         </div>
       </button>
       <button
@@ -57,11 +57,11 @@ const QuickCheckIn = ({ friend }) => {
             date: friend.next_due_date,
           })
         }
-        className=" btn rounded-md w-fit bg-[#e9e9e989] p-10 text-center"
+        className="flex-1 min-w-[100px] rounded-xl btn h-auto py-6 bg-slate-50 border-slate-100 hover:bg-emerald-50 hover:border-emerald-100 group transition-all"
       >
-        <div className="text-sm font-semibold text-[#1F2937] flex flex-col items-center gap-3">
-          <Video></Video>
-          Days Since Contact
+        <div className="text-sm font-bold text-slate-600 group-hover:text-emerald-700 flex flex-col items-center gap-2">
+          <Video size={20} />
+          <span>Video</span>
         </div>
       </button>
     </div>
