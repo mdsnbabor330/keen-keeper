@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import Mylink from "./Mylink";
 
-const navbar = () => {
+const Navbar = () => {
 
   const navLinks = [
     {
@@ -28,7 +28,7 @@ const navbar = () => {
   ];
   return (
     <nav className=" flex justify-center">
-      <div className="navbar fixed max-w-350 mx-auto bg-base-100">
+      <div className="navbar fixed max-w-6xl mx-auto bg-base-100 px-4">
       <div className="flex-1">
         <p className="text-[24px]">
           <span className="font-extrabold text-[#1F2937]">Keen</span>
@@ -54,4 +54,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

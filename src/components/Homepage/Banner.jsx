@@ -17,7 +17,7 @@ const Banner = () => {
 
   return (
     <section className="px-4 pt-25 pb-12 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-300">
+      <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <h1 className="mx-auto max-w-4xl text-[48px] font-extrabold leading-tight text-slate-800">
             Friends to keep close in your life

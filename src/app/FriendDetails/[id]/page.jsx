@@ -1,18 +1,19 @@
 import React from "react";
 import friends from "@/data/friends.json";
-import { Archive, BellRing, Contact, MessageCircle, MessageSquare, PhoneCall, Trash2, Video } from "lucide-react";
+import { Archive, BellRing, Trash2 } from "lucide-react";
 import Image from "next/image";
+import QuickCheckIn from "@/components/QuickCheckIn";
 
 const FriendDetails = async ({ params }) => {
   const { id } = await params;
   const friend = friends.find((friend) => friend.id == id);
   console.log(friend);
   return (
-    <main className="my-25 max-w-300 mx-auto px-3">
+    <main className="my-24 max-w-6xl mx-auto px-4">
       <div className="flex justify-between gap-5">
 
         <div className="space-y-4">
-          <div className="card bg-base-100 w-96 shadow-sm p-4 -z-10">
+          <div className="card bg-base-100 w-96 shadow-sm p-4">
             <figure>
               <Image
                 src={friend.picture}
@@ -123,26 +124,7 @@ const FriendDetails = async ({ params }) => {
              <h3 className="text-[20px] font-medium text-[#244D3F] mb-4">
                 Quick Check-In
               </h3>
-            <div className="flex gap-5">
-           <div className="rounded-md w-full bg-[#e9e9e989] p-5 text-center">
-              <p className="text-sm font-semibold text-[#1F2937] flex flex-col items-center gap-3">
-                <PhoneCall />
-                Days Since Contact
-              </p>
-            </div>
-            <div className="rounded-md w-full bg-[#e9e9e989] p-5 text-center">
-              <p className="text-sm font-semibold text-[#1F2937] flex flex-col items-center gap-3">
-                <MessageSquare />
-                Days Since Contact
-              </p>
-            </div>
-            <div className="rounded-md w-full bg-[#e9e9e989] p-5 text-center">
-              <p className="text-sm font-semibold text-[#1F2937] flex flex-col items-center gap-3">
-                <Video></Video>
-                Days Since Contact
-              </p>
-            </div>
-          </div>
+            <QuickCheckIn friend={friend}></QuickCheckIn>
           </div>
           
         </div>

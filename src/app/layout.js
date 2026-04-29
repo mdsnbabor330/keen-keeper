@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar/navbar";
+import Providers from "@/lib/providers/Provider";
 
 
 export const metadata = {
@@ -15,9 +16,11 @@ export default function RootLayout({ children }) {
       className={` h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Providers>
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
+        </Providers>
         </body>
     </html>
   );
