@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
   return (
     <nav className=" flex justify-center">
-      <div className="navbar fixed max-w-6xl mx-auto bg-base-100 px-4">
+      <div className="navbar fixed max-w-300 mx-auto bg-base-100 px-4">
       <div className="flex-1">
         <p className="text-[24px]">
           <span className="font-extrabold text-[#1F2937]">Keen</span>

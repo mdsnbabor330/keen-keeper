@@ -2,6 +2,7 @@ import Footer from "@/components/footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar/navbar";
 import Providers from "@/lib/providers/Provider";
+import { ToastContainer } from "react-toastify";
 
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
+        <ToastContainer></ToastContainer>
         </Providers>
         </body>
     </html>

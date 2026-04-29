@@ -9,7 +9,7 @@ const FriendDetails = async ({ params }) => {
   const friend = friends.find((friend) => friend.id == id);
   console.log(friend);
   return (
-    <main className="my-24 max-w-6xl mx-auto px-4">
+    <main className="my-24 max-w-300 mx-auto px-4">
       <div className="flex justify-between gap-5">
 
         <div className="space-y-4">
@@ -124,7 +124,7 @@ const FriendDetails = async ({ params }) => {
              <h3 className="text-[20px] font-medium text-[#244D3F] mb-4">
                 Quick Check-In
               </h3>
-            <QuickCheckIn friend={friend}></QuickCheckIn>
+            <QuickCheckIn friend={friend} ></QuickCheckIn>
           </div>
           
         </div>
