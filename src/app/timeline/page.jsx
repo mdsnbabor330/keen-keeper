@@ -13,7 +13,7 @@ const TimelinePage = () => {
 
   return (
     <div className="py-24 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-290 mx-auto">
         <h1 className="text-2xl md:text-3xl font-bold py-4 text-[#244D3F]">Timeline</h1>
         <div className="py-4">
           <select
