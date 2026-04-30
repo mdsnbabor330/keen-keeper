@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Keen Keeper
+[DEMO](https://keen-keeper.vercel.app/)
+**Keen Keeper** is a personal relationship management application designed to help you nurture and keep track of your meaningful connections. Think of it as a personal shelf for your friendships, allowing you to browse, tend to, and ensure you are staying in touch with the people who matter most.
 
-## Getting Started
+## 🚀 Features
 
-First, run the development server:
+* **Friendship Tracking:** Keep a record of your friends and the status of your relationships (e.g., "On-Track", "Almost Due", "Overdue").
+* **Dashboard Overview:** Get a quick glance at your relationship health, including total friends, who needs attention, and recent interactions.
+* **Quick Check-Ins:** Easily log interactions to maintain your connection streaks.
+* **Statistics & Insights:** Visualize your interaction history and relationship health over time.
+* **Responsive Design:** Beautiful, user-friendly interface that works seamlessly on desktop and mobile devices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Framework:** Next.js
+* **Library:** React
+* **Styling:** Tailwind CSS & DaisyUI
+* **Icons:** Lucide React & React Icons
+* **Charts:** Recharts
+* **Feedback:** React Toastify & React Spinners
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* `src/app`: Contains the main application routes and layouts (Next.js App Router).
+* `src/components`: Reusable UI components (Navbar, Banner, CheckIn, etc.).
+* `src/data`: Contains local JSON data files (e.g., `friends.json`) used for rendering content.
+* `src/UI`: Core UI elements and components used throughout the application.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
